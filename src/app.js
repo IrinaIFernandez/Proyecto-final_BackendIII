@@ -15,7 +15,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-// Swagger
+
 const swaggerOptions = {
     definition: {
         openapi: '3.0.1',
@@ -55,5 +55,5 @@ mongoose.connect(process.env.DATABASE)
     console.log(error);
 });
 
-// export para tests
+
 export default app;
